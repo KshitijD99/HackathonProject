@@ -46,7 +46,7 @@ test.describe("Login Functionality", () => {
   });
 
   //Validate Sign-Up Form with an Existing Email
-  test.only("TC-019 : Validate Sign-Up Form with an Existing Email", async ({
+  test("TC-019 : Validate Sign-Up Form with an Existing Email", async ({
     page,
   }) => {
     const loginPageObj = new LoginPage(page);
