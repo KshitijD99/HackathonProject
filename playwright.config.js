@@ -22,17 +22,15 @@ export default defineConfig({
       name: 'chromium',
       use: { 
         ...devices['Desktop Chrome'] ,
-        headless:false
       },
     },
 
-    // {
-    //   name: 'webkit',
-    //   use: { 
-    //     ...devices['Desktop Safari'] ,
-    //     headless:false
-    //   },
-    // },
+    {
+      name: 'webkit',
+      use: { 
+        ...devices['Desktop Safari'] ,
+      },
+    },
   ],
 });
 
