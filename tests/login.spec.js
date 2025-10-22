@@ -59,9 +59,11 @@ test.describe("Login Functionality", () => {
 
   //Verify Login with valid Credentials
   test("TC-020 : Verify Login with valid Credentials", async ({ page }) => {
-    const loginPageObj=new LoginPage(page);
+    const loginPageObj = new LoginPage(page);
     await loginPageObj.loginWithValidCred();
-    const loginMsgLocator = page.getByText(loginLocators.LoginPageLocators.getByTextSuccessfullLogin);
+    const loginMsgLocator = page.getByText(
+      loginLocators.LoginPageLocators.getByTextSuccessfullLogin
+    );
     await expect(loginMsgLocator).toBeVisible();
   });
 });
