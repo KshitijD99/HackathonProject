@@ -141,4 +141,104 @@ export class LoginPage {
       await continueButton.click();
     }
   }
+
+  async existingEmailSignup() {
+    await this.page
+      .locator(loginLocators.LoginPageLocators.joinForFreeLocator)
+      .click();
+    await this.page
+      .getByRole(loginLocators.LoginPageLocators.getByRoleEmailTextBox.role, {
+        name: loginLocators.LoginPageLocators.getByRoleEmailTextBox.name,
+      })
+      .waitFor();
+
+    const continueButton = this.page.getByRole(
+      loginLocators.LoginPageLocators.getByRoleButtonContinue.role,
+      {
+        name: loginLocators.LoginPageLocators.getByRoleButtonContinue.name,
+        exact: true,
+      }
+    );
+
+    if (await continueButton.isVisible()) {
+      await this.page
+        .getByRole(loginLocators.LoginPageLocators.getByRoleEmailTextBox.role, {
+          name: loginLocators.LoginPageLocators.getByRoleEmailTextBox.name,
+        })
+        .pressSequentially(testData.newEmail, { delay: 200 });
+      await continueButton.click();
+    } else {
+      await this.page
+        .getByRole(loginLocators.LoginPageLocators.getByRoleEmailTextBox.role, {
+          name: loginLocators.LoginPageLocators.getByRoleEmailTextBox.name,
+        })
+        .pressSequentially(testData.email, { delay: 200 });
+      await this.page
+        .getByRole(loginLocators.LoginPageLocators.getByRoleNameTextBox.role, {
+          name: loginLocators.LoginPageLocators.getByRoleNameTextBox.name,
+        })
+        .pressSequentially(testData.name, { delay: 200 });
+      await this.page
+        .getByRole(
+          loginLocators.LoginPageLocators.getByRolePasswordTextBox.role,
+          {
+            name: loginLocators.LoginPageLocators.getByRolePasswordTextBox.name,
+          }
+        )
+        .pressSequentially(testData.wrongPassword, { delay: 200 });
+      await this.page
+        .getByRole(
+          loginLocators.LoginPageLocators.getByRoleButtonJoinForFree.role,
+          {
+            name: loginLocators.LoginPageLocators.getByRoleButtonJoinForFree
+              .name,
+          }
+        )
+        .click();
+    }
+  }
+
+  async loginWithValidCred() {
+    await this.page
+      .locator(loginLocators.LoginPageLocators.loginLocator)
+      .click();
+
+    await this.page
+      .getByRole(loginLocators.LoginPageLocators.getByRoleEmailTextBox.role, {
+        name: loginLocators.LoginPageLocators.getByRoleEmailTextBox.name,
+      })
+      .pressSequentially(testData.email, { delay: 200 });
+    const continueButton = this.page.getByRole(
+      loginLocators.LoginPageLocators.getByRoleButtonContinue.role,
+      {
+        name: loginLocators.LoginPageLocators.getByRoleButtonContinue.name,
+        exact: true,
+      }
+    );
+    if (await continueButton.isVisible()) {
+      await continueButton.click();
+    }
+    await this.page
+      .getByRole(
+        loginLocators.LoginPageLocators.getByRolePasswordTextBox.role,
+        { name: loginLocators.LoginPageLocators.getByRolePasswordTextBox.name }
+      )
+      .pressSequentially(testData.password, { delay: 200 });
+    const nextButton = this.page.getByRole(
+      loginLocators.LoginPageLocators.getByRoleButtonNext.role,
+      {
+        name: loginLocators.LoginPageLocators.getByRoleButtonNext.name,
+        exact: true,
+      }
+    );
+    if (await nextButton.isVisible()) {
+      await nextButton.click();
+    } else {
+      await this.page
+        .getByRole(loginLocators.LoginPageLocators.getByRoleButtonLogin.role, {
+          name: loginLocators.LoginPageLocators.getByRoleButtonLogin.name,
+        })
+        .click();
+    }
+  }
 }
