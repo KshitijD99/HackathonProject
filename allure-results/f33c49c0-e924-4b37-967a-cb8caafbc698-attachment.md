@@ -1,0 +1,308 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - navigation [ref=e7]:
+      - navigation [ref=e13]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: https://www.coursera.org/
+              - generic [ref=e17]: For Individuals
+          - listitem [ref=e18]:
+            - link [ref=e19] [cursor=pointer]:
+              - /url: https://www.coursera.org/business?utm_content=corp-to-home-for-enterprise&utm_campaign=website&utm_medium=coursera&utm_source=header&utm_term=b-out
+              - generic [ref=e20]: For Businesses
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://www.coursera.org/campus?utm_content=corp-to-landing-for-campus&utm_campaign=website&utm_medium=coursera&utm_source=header&utm_term=b-out
+              - generic [ref=e23]: For Universities
+          - listitem [ref=e24]:
+            - link [ref=e25] [cursor=pointer]:
+              - /url: https://www.coursera.org/government?utm_content=corp-to-landing-for-government&utm_campaign=website&utm_medium=coursera&utm_source=header&utm_term=b-out
+              - generic [ref=e26]: For Governments
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - link [ref=e33] [cursor=pointer]:
+            - /url: /
+            - img [ref=e36]
+          - button [ref=e40] [cursor=pointer]:
+            - generic [ref=e41]:
+              - text: Explore
+              - img [ref=e43]
+        - search [ref=e48]:
+          - generic [ref=e49]:
+            - textbox [ref=e51]:
+              - /placeholder: What do you want to learn?
+            - img [ref=e53] [cursor=pointer]
+        - generic [ref=e59]:
+          - button [ref=e61] [cursor=pointer]:
+            - generic [ref=e62]: Log In
+          - button [ref=e64] [cursor=pointer]:
+            - generic [ref=e65]: Join for Free
+    - generic [ref=e69]:
+      - generic [ref=e71]:
+        - heading [level=1] [ref=e72]: Oops! Something went wrong
+        - paragraph [ref=e73]:
+          - generic [ref=e74]:
+            - text: This page has encountered an error. Our team is on it. Please try again later. If the issue persists,
+            - link [ref=e75] [cursor=pointer]:
+              - /url: https://www.coursera.support/
+              - text: contact help support
+            - text: .
+      - img [ref=e78]
+    - contentinfo [ref=e139]:
+      - contentinfo [ref=e140]:
+        - paragraph [ref=e142]: Coursera Footer
+        - generic [ref=e145]:
+          - generic [ref=e146]:
+            - paragraph [ref=e147]: Coursera
+            - list [ref=e148]:
+              - listitem [ref=e149]:
+                - link [ref=e150] [cursor=pointer]:
+                  - /url: https://about.coursera.org/
+                  - text: About
+              - listitem [ref=e151]:
+                - link [ref=e152] [cursor=pointer]:
+                  - /url: https://about.coursera.org/how-coursera-works/
+                  - text: What We Offer
+              - listitem [ref=e153]:
+                - link [ref=e154] [cursor=pointer]:
+                  - /url: https://about.coursera.org/leadership
+                  - text: Leadership
+              - listitem [ref=e155]:
+                - link [ref=e156] [cursor=pointer]:
+                  - /url: https://careers.coursera.com/
+                  - text: Careers
+              - listitem [ref=e157]:
+                - link [ref=e158] [cursor=pointer]:
+                  - /url: /browse
+                  - text: Catalog
+              - listitem [ref=e159]:
+                - link [ref=e160] [cursor=pointer]:
+                  - /url: /courseraplus
+                  - text: Coursera Plus
+              - listitem [ref=e161]:
+                - link [ref=e162] [cursor=pointer]:
+                  - /url: /professional-certificate
+                  - text: Professional Certificates
+              - listitem [ref=e163]:
+                - link [ref=e164] [cursor=pointer]:
+                  - /url: /mastertrack
+                  - text: MasterTrack® Certificates
+              - listitem [ref=e165]:
+                - link [ref=e166] [cursor=pointer]:
+                  - /url: /degrees
+                  - text: Degrees
+              - listitem [ref=e167]:
+                - link [ref=e168] [cursor=pointer]:
+                  - /url: /business?utm_campaign=website&utm_content=corp-to-home-footer-for-enterprise&utm_medium=coursera&utm_source=enterprise
+                  - text: For Enterprise
+              - listitem [ref=e169]:
+                - link [ref=e170] [cursor=pointer]:
+                  - /url: /government?utm_campaign=website&utm_content=corp-to-home-footer-for-government&utm_medium=coursera&utm_source=enterprise
+                  - text: For Government
+              - listitem [ref=e171]:
+                - link [ref=e172] [cursor=pointer]:
+                  - /url: /campus?utm_campaign=website&utm_content=corp-to-home-footer-for-campus&utm_medium=coursera&utm_source=enterprise
+                  - text: For Campus
+              - listitem [ref=e173]:
+                - link [ref=e174] [cursor=pointer]:
+                  - /url: https://partnerships.coursera.org/?utm_medium=coursera&utm_source=partnerships&utm_campaign=website&utm_content=corp-to-home-footer-become-a-partner
+                  - text: Become a Partner
+              - listitem [ref=e175]:
+                - link [ref=e176] [cursor=pointer]:
+                  - /url: /social-impact
+                  - text: Social Impact
+          - generic [ref=e177]:
+            - paragraph [ref=e178]: Community
+            - list [ref=e179]:
+              - listitem [ref=e180]:
+                - link [ref=e181] [cursor=pointer]:
+                  - /url: https://www.coursera.community
+                  - text: Learners
+              - listitem [ref=e182]:
+                - link [ref=e183] [cursor=pointer]:
+                  - /url: https://www.coursera.org/partners
+                  - text: Partners
+              - listitem [ref=e184]:
+                - link [ref=e185] [cursor=pointer]:
+                  - /url: https://www.coursera.support/s/article/360000152926-Become-a-Coursera-beta-tester
+                  - text: Beta Testers
+              - listitem [ref=e186]:
+                - link [ref=e187] [cursor=pointer]:
+                  - /url: https://blog.coursera.org
+                  - text: Blog
+              - listitem [ref=e188]:
+                - link [ref=e189] [cursor=pointer]:
+                  - /url: https://open.spotify.com/show/58M36bneU7REOofdPZxe6A
+                  - text: The Coursera Podcast
+              - listitem [ref=e190]:
+                - link [ref=e191] [cursor=pointer]:
+                  - /url: https://medium.com/coursera-engineering
+                  - text: Tech Blog
+          - generic [ref=e192]:
+            - paragraph [ref=e193]: More
+            - list [ref=e194]:
+              - listitem [ref=e195]:
+                - link [ref=e196] [cursor=pointer]:
+                  - /url: /about/press
+                  - text: Press
+              - listitem [ref=e197]:
+                - link [ref=e198] [cursor=pointer]:
+                  - /url: https://investor.coursera.com
+                  - text: Investors
+              - listitem [ref=e199]:
+                - link [ref=e200] [cursor=pointer]:
+                  - /url: /about/terms
+                  - text: Terms
+              - listitem [ref=e201]:
+                - link [ref=e202] [cursor=pointer]:
+                  - /url: /about/privacy
+                  - text: Privacy
+              - listitem [ref=e203]:
+                - link [ref=e204] [cursor=pointer]:
+                  - /url: https://learner.coursera.help/hc
+                  - text: Help
+              - listitem [ref=e205]:
+                - link [ref=e206] [cursor=pointer]:
+                  - /url: https://learner.coursera.help/hc/articles/360050668591-Accessibility-Statement
+                  - text: Accessibility
+              - listitem [ref=e207]:
+                - link [ref=e208] [cursor=pointer]:
+                  - /url: /about/contact
+                  - text: Contact
+              - listitem [ref=e209]:
+                - link [ref=e210] [cursor=pointer]:
+                  - /url: https://www.coursera.org/articles
+                  - text: Articles
+              - listitem [ref=e211]:
+                - link [ref=e212] [cursor=pointer]:
+                  - /url: /directory
+                  - text: Directory
+              - listitem [ref=e213]:
+                - link [ref=e214] [cursor=pointer]:
+                  - /url: https://about.coursera.org/affiliates
+                  - text: Affiliates
+              - listitem [ref=e215]:
+                - link [ref=e216] [cursor=pointer]:
+                  - /url: https://coursera_assets.s3.amazonaws.com/footer/Modern+Slavery+Statement+(approved+March+26%2C+2025).pdf
+                  - text: Modern Slavery Statement
+              - listitem [ref=e217]:
+                - link [ref=e218] [cursor=pointer]:
+                  - /url: /about/cookies-manage
+                  - text: Manage Cookie Preferences
+          - generic [ref=e219]:
+            - generic [ref=e220]:
+              - link [ref=e221] [cursor=pointer]:
+                - /url: https://itunes.apple.com/app/apple-store/id736535961?pt=2334150&ct=Coursera%20Web%20Promo%20Banner&mt=8
+                - img [ref=e224]
+              - link [ref=e225] [cursor=pointer]:
+                - /url: http://play.google.com/store/apps/details?id=org.coursera.android
+                - img [ref=e228]
+            - img [ref=e232]
+          - generic [ref=e236]: © 2025 Coursera Inc. All rights reserved.
+  - dialog [ref=e240]:
+    - generic [ref=e241]:
+      - button [ref=e242] [cursor=pointer]:
+        - img [ref=e243]
+      - generic [ref=e247]:
+        - heading [level=1] [ref=e249]: Welcome back
+        - generic [ref=e250]:
+          - generic [ref=e252]:
+            - generic [ref=e254]:
+              - generic [ref=e255]:
+                - text: Email
+                - generic [ref=e256]: "*"
+              - generic [ref=e257]:
+                - textbox [ref=e258]:
+                  - /placeholder: name@email.com
+                  - text: kdimp09@gmail.com
+                - group
+            - generic [ref=e259]:
+              - generic [ref=e260]:
+                - generic [ref=e261]:
+                  - text: Password
+                  - generic [ref=e262]: "*"
+                - generic [ref=e263]:
+                  - textbox [ref=e264]:
+                    - /placeholder: Enter your password
+                    - text: wrongpassword
+                  - generic [ref=e265]:
+                    - generic [ref=e266]: Your password is hidden
+                    - button [ref=e267] [cursor=pointer]:
+                      - img [ref=e268]
+                  - group
+              - button [ref=e271] [cursor=pointer]: Forgot password?
+            - button [active] [ref=e272] [cursor=pointer]: Login
+          - generic [ref=e274]:
+            - separator [ref=e275]
+            - generic [ref=e276]: or
+            - separator [ref=e277]
+          - generic [ref=e278]:
+            - button [ref=e279] [cursor=pointer]:
+              - img [ref=e280]
+              - text: Continue with Google
+            - button [ref=e286] [cursor=pointer]:
+              - img [ref=e287]
+              - text: Continue with Facebook
+            - button [ref=e288] [cursor=pointer]:
+              - img [ref=e289]
+              - text: Continue with Apple
+          - paragraph [ref=e290]:
+            - generic [ref=e291]:
+              - text: New to Coursera?
+              - button [ref=e292] [cursor=pointer]: Sign up
+          - separator [ref=e293]
+          - paragraph [ref=e294]:
+            - button [ref=e295] [cursor=pointer]: Log in with your organization
+        - generic [ref=e296]:
+          - paragraph [ref=e297]:
+            - generic [ref=e298]:
+              - text: Having trouble logging in?
+              - link [ref=e299] [cursor=pointer]:
+                - /url: https://learner.coursera.help/hc/articles/209818553
+                - text: Learner help center
+          - paragraph [ref=e300]:
+            - generic [ref=e301]:
+              - text: This site is protected by reCAPTCHA Enterprise and the Google
+              - link [ref=e302] [cursor=pointer]:
+                - /url: https://policies.google.com/privacy
+                - text: Privacy Policy
+              - text: and
+              - link [ref=e303] [cursor=pointer]:
+                - /url: https://policies.google.com/terms
+                - text: Terms of Service
+              - text: apply.
+  - dialog:
+    - iframe [ref=e304]:
+      - generic [ref=f1e2]:
+        - iframe [ref=f1e5]:
+          - generic [ref=f2e3]:
+            - generic [ref=f2e5]:
+              - heading "Find the image that has the prize on the left held by the claw in the machine on the right. (3 of 5)" [level=2] [ref=f2e6]:
+                - generic [ref=f2e7]: Find the image that has the prize on the left held by the claw in the machine on the right. (3 of 5)
+              - generic [ref=f2e8]:
+                - generic [ref=f2e9]:
+                  - img "Match This!. Audio challenge is available below. Compatible with screen reader software." [ref=f2e10]
+                  - paragraph [ref=f2e11]: Match This!
+                - generic [ref=f2e12]:
+                  - generic [ref=f2e13]:
+                    - img "Image 7 of 8." [ref=f2e14]
+                    - button "Navigate to previous image" [ref=f2e15] [cursor=pointer]:
+                      - img [ref=f2e16]
+                    - button "Navigate to next image" [ref=f2e19] [cursor=pointer]:
+                      - img [ref=f2e20]
+                  - generic "7 of 8" [ref=f2e23]
+              - button "Submit" [ref=f2e32] [cursor=pointer]
+              - paragraph [ref=f2e33]: 843187047bc248765.5646698404
+            - generic [ref=f2e34]:
+              - button "Audio" [ref=f2e35] [cursor=pointer]:
+                - img [ref=f2e36]
+                - paragraph [ref=f2e38]: Audio
+              - button "Restart" [ref=f2e39] [cursor=pointer]:
+                - img [ref=f2e40]
+                - paragraph [ref=f2e42]: Restart
+        - button "Close Dialog." [ref=f1e6] [cursor=pointer]
+```

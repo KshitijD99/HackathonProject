@@ -1,0 +1,20 @@
+{
+    "LoginPageLocators":{
+        "loginLocator":"a[data-track-href='/?authMode=login']",
+        "joinForFreeLocator":"a[data-track-href='/?authMode=signup']",
+        "getByRoleEmailTextBox":{"role":"textbox","name":"Email"},
+        "getByRoleButtonContinue":{"role":"button","name":"Continue"},
+        "getByRolePasswordTextBox":{"role":"textbox","name":"Password"},
+        "getByRoleButtonNext":{"role":"button","name":"Next"},
+        "getByRoleButtonLogin":{"role":"button","name":"Login"},
+        "getByTextErrorMsg":"Sorry, we don't recognize that username or password. You can try again or reset your password",
+        "getByRoleButtonForgotPass":{"role":"button","name":"Forgot password?"},
+        "getByRoleButtonResetPass":{"role":"button","name":"Reset Password"},
+        "getByTextResetMsg":"Please check your email inbox for a password recovery link. Don't forget to check your spam folder.",
+        "getByRoleButtonJoinForFree":{"role":"button","name":"Join for Free"},
+        "getByRoleNameTextBox":{"role":"textbox","name":"Full Name"},
+        "getByTextEmailErrorMsg":"Looks like you already have an account with that email address. Please",
+        "getByTextSuccessfullLogin":"Welcome, Kshitij!"
+    }
+    
+}

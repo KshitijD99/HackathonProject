@@ -1,0 +1,1 @@
+locator('button[data-track-component="login_form_forgot_password_link"]')
