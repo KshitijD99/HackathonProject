@@ -31,10 +31,10 @@ test.describe("Login Functionality", () => {
   });
 
   //Verify Navigation to the "Join for Free" (Sign-Up) Page
-  test.only('TC-018 : Verify Navigation to the "Join for Free" (Sign-Up) Page', async ({
+  test('TC-018 : Verify Navigation to the "Join for Free" (Sign-Up) Page', async ({
     page,
   }) => {
-    const loginObj=new LoginPage(page);
+    const loginObj = new LoginPage(page);
     await loginObj.joinForFree();
     const SignUpPageLocator = page.getByRole(
       loginLocators.LoginPageLocators.getByRoleButtonJoinForFree.role,
@@ -46,65 +46,24 @@ test.describe("Login Functionality", () => {
   });
 
   //Validate Sign-Up Form with an Existing Email
-  test("TC-019 : Validate Sign-Up Form with an Existing Email", async ({
+  test.only("TC-019 : Validate Sign-Up Form with an Existing Email", async ({
     page,
   }) => {
-    await page.locator('a[data-track-href="/?authMode=signup"]').click();
-    await page.getByRole("textbox", { name: "Email" }).waitFor();
-
-    const continueButton = page.getByRole("button", {
-      name: "Continue",
-      exact: true,
-    });
-
-    if (await continueButton.isVisible()) {
-      await page
-        .getByRole("textbox", { name: "Email" })
-        .pressSequentially(testData.newEmail, { delay: 200 });
-      await continueButton.click();
-    } else {
-      await page
-        .getByRole("textbox", { name: "Email" })
-        .pressSequentially(testData.email, { delay: 200 });
-      await page
-        .getByRole("textbox", { name: "Full Name" })
-        .pressSequentially(testData.name, { delay: 200 });
-      await page
-        .getByRole("textbox", { name: "Password" })
-        .pressSequentially(testData.wrongPassword, { delay: 200 });
-      await page.getByRole("button", { name: "Join for Free" }).click();
-    }
-
+    const loginPageObj = new LoginPage(page);
+    await loginPageObj.existingEmailSignup();
     const emailErrorMsg = page.getByText(
-      "Looks like you already have an account with that email address. Please"
+      loginLocators.LoginPageLocators.getByTextEmailErrorMsg
     );
     await expect(emailErrorMsg).toBeVisible();
   });
 
   //Verify Login with valid Credentials
   test("TC-020 : Verify Login with valid Credentials", async ({ page }) => {
-    await page.locator('a[data-track-href="/?authMode=login"]').click();
-
-    await page
-      .getByRole("textbox", { name: "Email" })
-      .pressSequentially(testData.email, { delay: 200 });
-    const continueButton = page.getByRole("button", {
-      name: "Continue",
-      exact: true,
-    });
-    if (await continueButton.isVisible()) {
-      await continueButton.click();
-    }
-    await page
-      .getByRole("textbox", { name: "Password" })
-      .pressSequentially(testData.password, { delay: 200 });
-    const nextButton = page.getByRole("button", { name: "Next", exact: true });
-    if (await nextButton.isVisible()) {
-      await nextButton.click();
-    } else {
-      await page.getByRole("button", { name: "Login" }).click();
-    }
-    const loginMsgLocator = page.getByText("Welcome, Kshitij!");
+    const loginPageObj = new LoginPage(page);
+    await loginPageObj.loginWithValidCred();
+    const loginMsgLocator = page.getByText(
+      loginLocators.LoginPageLocators.getByTextSuccessfullLogin
+    );
     await expect(loginMsgLocator).toBeVisible();
   });
 });
